@@ -14,18 +14,17 @@
 
 
 
+// classes modulize your code..
+// spaceship game : rocket , bullet , meteors..
 
+// instead of setting up 100 meteors , you just call instances of your class.
 
 class shapes{
 public:
     // all variables
     int sides;
+    
     int vertices;
-    
-    
-    
-    
-    
     
     
     // methods
