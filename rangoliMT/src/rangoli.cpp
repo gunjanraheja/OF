@@ -15,12 +15,12 @@ void rangoli::drawCircle(float x, float y, float radius){
     
     ofEllipse(x,y,radius,radius);
     
-//    ofRect(x, y, radius, 0);
+
     
     
     if(radius > 20){
         
-        ofSetColor(255,0,0);
+        ofSetColor(255,255,0);
         drawCircle(x + radius/2, y, radius/2);
         ofColor(0,255,0);
         drawCircle(x - radius/2, y, radius/2);
@@ -29,13 +29,7 @@ void rangoli::drawCircle(float x, float y, float radius){
          ofSetColor(255,0,255);
         drawCircle(x, y - radius/2, radius/2);
         
-        
-        ofPushMatrix();
-        ofRotate(radius);
-        rangoli(rotate);
-        ofPopMatrix();
-        
-        
+       
         
         
     }

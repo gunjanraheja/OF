@@ -7,15 +7,6 @@
 //
 
 #include "rangoli.hpp"
-
-
-
-
-
-
-
-
-
 void rangoli::drawCircle(float x, float y, float radius){
     
    
@@ -23,15 +14,6 @@ void rangoli::drawCircle(float x, float y, float radius){
     ofNoFill();
     
     ofEllipse(x,y,radius,radius);
-    
-    
-    
-//    ofSetCircleResolution(10);
-//    ofEllipse(x,120, radius, radius);
-    
-    
-    //    ofRect(x, y, radius, 0);
-    
     
     if(radius > 20){
       
@@ -52,15 +34,8 @@ void rangoli::drawCircle(float x, float y, float radius){
         ofSetColor(255,0,255);
         drawCircle(x + radius/2, y, radius/2);
         
-        ofPushMatrix();
-        ofRotate(radius);
-       rangoli(rotate);
-        ofPopMatrix();
-      
-        
+
     }
-    
-    
     
     
     
@@ -79,7 +54,7 @@ void rangoli::draw(){
 
 void rangoli::setup(){
     
-    ofEnableSmoothing();
+   ofEnableSmoothing();
 
 
 }
