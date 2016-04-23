@@ -7,6 +7,7 @@
 //#include "Particle.hpp"
 
 
+
 class Params{
 public:
     void setup(); // center of the emitter
@@ -15,9 +16,15 @@ public:
     float velRad; //max velocity
     float lifeTime; //max life
     float rotate; //rotation amount
+    float force;
+    float spinning;
+    float friction;
+
+    
     
 };
 
+//extern Params Param;
 
 
 #endif /* Params_hpp */

@@ -25,6 +25,7 @@ public:
     float lifeTime; //maxTime particle will live
     bool live;
     ofPoint randomPointInCircle(float maxRad);
+     int color1, color2;
     
 };
 

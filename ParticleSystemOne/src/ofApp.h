@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "Params.hpp"
 #include "Particle.hpp"
+#include "ofxGui.h"
 
 class ofApp : public ofBaseApp{
     
@@ -25,7 +26,8 @@ public:
     
 //    Particle p;
     
-    
+    ofFbo fbo;
+    float history;
     float time;
     float time0; //runs immediately
     
@@ -34,5 +36,15 @@ public:
     vector <Particle> p;
     float bornCount;
     float bornRate;
+    
+    ofxPanel gui;
+    
+    ofxFloatSlider force;
+    ofxFloatSlider eRad;
+    ofxFloatSlider velRad;
+    ofxFloatSlider lifeTime;
+    ofxFloatSlider rotate;
+    ofxFloatSlider spinning;
+    ofxFloatSlider friction;
     
 };
