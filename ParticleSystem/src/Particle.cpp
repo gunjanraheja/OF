@@ -81,9 +81,9 @@ void Particle::draw(){
         color.setHue(hue);
         
         ofSetColor(color);
+  
         
-        ofDrawCircle(pos, size); 
-        
+      
     }
     
 }
